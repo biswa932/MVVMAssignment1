@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVMAssignment1.Views.ParameterView">
+  <ContentView.Content>
+      <StackLayout Spacing="12">
+            <Label  x:Name="txtParameterNameA" Text="{Binding NameA}" HeightRequest="40" BackgroundColor="White" HorizontalOptions="FillAndExpand"/>
+            <!--<Entry x:Name="txtParameterNameA" Text="{Binding NameA}" HeightRequest="40" BackgroundColor="White" Placeholder="Parameter Name" HorizontalOptions="FillAndExpand"/>-->
+            <!--<Entry  x:Name="txtValue" Text="{Binding Value}" BackgroundColor="White" HeightRequest="40" Placeholder="Parameter Value" HorizontalOptions="FillAndExpand"/>-->
+            <Picker x:Name="pickerValueA"  Title="Parameter A Value" SelectedItem="{Binding ValueA}">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>1</x:String>
+                        <x:String>2</x:String>
+                        <x:String>3</x:String>
+                        <x:String>4</x:String>
+                        <x:String>5</x:String>
+                        <x:String>6</x:String>
+                        <x:String>7</x:String>
+                        <x:String>8</x:String>
+                        <x:String>9</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Label  x:Name="txtParameterName" Text="{Binding NameB}" HeightRequest="40" BackgroundColor="White" HorizontalOptions="FillAndExpand"/>
+            <!--<Entry x:Name="txtParameterName" Text="{Binding NameB}" HeightRequest="40" BackgroundColor="White" Placeholder="Parameter Name" HorizontalOptions="FillAndExpand"/>-->
+            <!--<Entry  x:Name="txtValue" Text="{Binding Value}" BackgroundColor="White" HeightRequest="40" Placeholder="Parameter Value" HorizontalOptions="FillAndExpand"/>-->
+            <Picker x:Name="pickerValueB"  Title="Parameter B Value" SelectedItem="{Binding ValueB}">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>1</x:String>
+                        <x:String>2</x:String>
+                        <x:String>3</x:String>
+                        <x:String>4</x:String>
+                        <x:String>5</x:String>
+                        <x:String>6</x:String>
+                        <x:String>7</x:String>
+                        <x:String>8</x:String>
+                        <x:String>9</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>
