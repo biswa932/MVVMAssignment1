@@ -1,2 +1,2 @@
 # MVVMAssignment1
-Single class list with MVVM (insert,update,delete,delete all,view all)
+Single class list with MVVM (update,view all)
